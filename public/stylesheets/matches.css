@@ -1,0 +1,75 @@
+
+body {
+    background-image:url(../images/dating.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+
+
+div.matches {
+    margin-top:30px;
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:left;
+    max-width:600px;
+
+    -webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.35);
+    box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.35);
+    padding:30px;
+    padding-top:0px;
+    padding-bottom:10px;
+    border:1px solid #eee;
+    
+
+    background-color:rgba(255,255,255,0.75);
+}
+
+div.matches h1 {
+    text-align:center;
+    margin-bottom:20px;
+}
+
+div.match {
+    padding:20px;
+    min-height:200px;
+    background-color:white;
+    -webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.35);
+    box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.35);
+    margin-bottom:20px;
+}
+
+div.match div.imageandname {
+    width:150px;
+    float:left;
+    text-align:center;
+}
+
+div.match div.imageandname img {
+    border-radius:50%;
+    width:100px;
+    height:100px;
+}
+
+div.match div.stats {
+    float:left;
+    width:300px;
+    margin-left:30px;
+    min-height:100px;
+    font-size:20px;
+    font-weight:200;
+}
+
+div.match div.stats label {
+    font-weight:bold;
+    padding-right:6px;
+}
+
+
+div.match h3 {
+    font-size:20px;
+    font-weight:200;
+}

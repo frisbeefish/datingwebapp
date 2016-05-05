@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+
+    <title>Your Dating App</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="stylesheets/main.css" >
+    <link rel="stylesheet" href="stylesheets/signup.css" >
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Your dating app</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="starter-template">
+        <h1>Sign Up</h1>
+        
+   
+
+        <form method="POST" action="/signup">
+          <h3>About Me</h3>
+          <img class="avatar" src="" ></img>
+          <input autocomplete="off" type="hidden" id="avatarimage" name="avatarimage" value=""/>
+          <div class="form-group">
+            <label for="userId">User Id</label>
+            <input type="email" class="form-control" id="userId" name="userId" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+          </div>
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name">
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">My Age</label>
+            <input style="width:80px;" type="number" class="form-control" id="age" name="age">
+          </div>
+          <div class="form-group">
+            <label  for="exampleInputPassword1">Gender:</label>
+            <label style="margin-left:10px;" class="radio-inline">
+                <input autocomplete="off" type="radio" name="mysex" value="Male">Male</label>
+            <label class="radio-inline">
+                <input autocomplete="off" type="radio" name="mysex" value="Female">Female</label>
+          </div>
+          <div class="form-group">
+            <label  for="exampleInputPassword1">Religion:</label>
+            <label style="margin-left:10px;" class="radio-inline">
+              <input type="radio" name="myreligion" value="Christian">Christian</label>
+            <label class="radio-inline"><input type="radio" name="myreligion" value="Jewish">Jewish</label>
+            <label class="radio-inline"><input type="radio" name="myreligion" value="Other">Other</label>
+          </div>
+
+
+          <h3 style="margin-top:30px;">My Ideal Match...</h3>
+          <div class="form-group">
+            <label style="display:block;" for="exampleInputPassword1">Min/Max Age</label>
+            <input style="width:80px; float:left;" type="number" class="form-control" id="minPreferredAge" 
+               name="minPreferredAge"
+               placeholder="Min">
+            <input style="width:80px; float:left; margin-left:10px;" type="number" class="form-control"
+               id="maxPreferredAge" name="maxPreferredAge"
+               placeholder="Max">
+            <br style="clear:both;"/>
+          </div>
+          <div class="form-group">
+            <label  for="exampleInputPassword1">Gender:</label>
+            <label style="margin-left:10px;" class="radio-inline">
+                <input type="radio" name="preferredGender" value="Male">Male</label>
+            <label class="radio-inline"><input type="radio" name="preferredGender" value="Female">Female</label>
+          </div>
+          <div class="form-group">
+            <label  for="exampleInputPassword1">Religion:</label>
+            <label style="margin-left:10px;" class="radio-inline">
+              <input type="radio" name="preferredReligion" value="Christian">Christian</label>
+            <label class="radio-inline"><input type="radio" name="preferredReligion" value="Jewish" >Jewish</label>
+            <label class="radio-inline"><input type="radio" name="preferredReligion" value="Other">Other</label>
+          </div>
+
+          <div class="form-group buttonholder">
+             <button type="submit" class="btn btn-primary">Sign Up</button>
+          </div>
+        </form>
+
+      </div>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <script src="js/signup.js"></script>
+
+  </body>
+</html>
